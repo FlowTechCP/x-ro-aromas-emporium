@@ -1,6 +1,7 @@
 import { X, Plus, Minus, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/contexts/CartContext';
+import { WhatsAppCheckoutButton } from '@/components/whatsapp/WhatsAppButton';
 import {
   Sheet,
   SheetContent,
@@ -110,9 +111,7 @@ export const CartSlideOver = () => {
                   {formatPrice(total)}
                 </span>
               </div>
-              <Button variant="gold" size="lg" className="w-full">
-                Finalizar Compra
-              </Button>
+              <WhatsAppCheckoutButton />
               <Button 
                 variant="outline" 
                 size="lg" 
