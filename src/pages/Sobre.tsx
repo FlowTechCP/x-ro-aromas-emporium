@@ -1,27 +1,27 @@
-import { Leaf, Heart, Award, Users } from 'lucide-react';
-import brandSacola from '@/assets/brand-sacola.jpeg';
-import logoFull from '@/assets/logo-full.jpg';
+import { Leaf, Heart, Award, Users } from "lucide-react";
+import brandSacola from "@/assets/brand-sacola.jpeg";
+import logoFull from "@/assets/logo-full.jpg";
 
 const values = [
   {
     icon: Leaf,
-    title: 'Ingredientes Naturais',
-    description: 'Utilizamos apenas essências de alta qualidade e ingredientes naturais em todas as nossas criações.',
+    title: "Ingredientes Naturais",
+    description: "Utilizamos apenas essências de alta qualidade e ingredientes naturais em todas as nossas criações.",
   },
   {
     icon: Heart,
-    title: 'Feito com Amor',
-    description: 'Cada produto é cuidadosamente desenvolvido e produzido artesanalmente com dedicação.',
+    title: "Feito com Amor",
+    description: "Cada produto é cuidadosamente desenvolvido e produzido artesanalmente com dedicação.",
   },
   {
     icon: Award,
-    title: 'Qualidade Premium',
-    description: 'Buscamos excelência em cada detalhe, desde a formulação até a embalagem final.',
+    title: "Qualidade Premium",
+    description: "Buscamos excelência em cada detalhe, desde a formulação até a embalagem final.",
   },
   {
     icon: Users,
-    title: 'Compromisso com Você',
-    description: 'Sua satisfação é nossa prioridade. Oferecemos atendimento personalizado e humanizado.',
+    title: "Compromisso com Você",
+    description: "Sua satisfação é nossa prioridade. Oferecemos atendimento personalizado e humanizado.",
   },
 ];
 
@@ -32,12 +32,8 @@ const Sobre = () => {
       <section className="bg-primary text-primary-foreground section-padding">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="text-accent font-medium tracking-widest text-sm uppercase">
-              Nossa História
-            </span>
-            <h1 className="font-display text-4xl md:text-5xl mt-4 mb-6">
-              A Essência por Trás da Xêro Aromas
-            </h1>
+            <span className="text-accent font-medium tracking-widest text-sm uppercase">Nossa História</span>
+            <h1 className="font-display text-4xl md:text-5xl mt-4 mb-6">A Essência por Trás da Xêro Aromas</h1>
             <p className="text-primary-foreground/70 text-lg leading-relaxed">
               Uma jornada de paixão por fragrâncias que transformam ambientes e criam memórias inesquecíveis.
             </p>
@@ -57,26 +53,29 @@ const Sobre = () => {
               />
             </div>
             <div className="space-y-6">
-              <span className="text-accent font-medium tracking-widest text-sm uppercase">
-                Como Tudo Começou
-              </span>
-              <h2 className="font-display text-3xl md:text-4xl">
-                Do Sonho à Realidade
-              </h2>
+              <span className="text-accent font-medium tracking-widest text-sm uppercase">Como Tudo Começou</span>
+              <h2 className="font-display text-3xl md:text-4xl">Do Sonho à Realidade</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  A Xêro Aromas nasceu do desejo de criar fragrâncias que vão além do comum. 
-                  Fundada com a missão de trazer a essência da natureza para dentro de cada lar brasileiro, 
-                  nossa marca representa a união entre tradição artesanal e inovação.
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque
+                  sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+                  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                  lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
+                  per conubia nostra inceptos himenaeos.
                 </p>
                 <p>
-                  Cada produto é resultado de meses de pesquisa e desenvolvimento, buscando a 
-                  combinação perfeita de notas olfativas que despertem emoções e criem atmosferas únicas.
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque
+                  sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+                  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                  lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
+                  per conubia nostra inceptos himenaeos.
                 </p>
                 <p>
-                  Acreditamos que um ambiente bem perfumado tem o poder de transformar momentos 
-                  simples em experiências memoráveis. Por isso, dedicamos tempo e carinho em cada 
-                  etapa do processo de criação.
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque
+                  sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+                  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                  lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
+                  per conubia nostra inceptos himenaeos.
                 </p>
               </div>
             </div>
@@ -88,17 +87,13 @@ const Sobre = () => {
       <section className="section-padding bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-accent font-medium tracking-widest text-sm uppercase">
-              O Que Nos Guia
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl mt-2">
-              Nossos Valores
-            </h2>
+            <span className="text-accent font-medium tracking-widest text-sm uppercase">O Que Nos Guia</span>
+            <h2 className="font-display text-3xl md:text-4xl mt-2">Nossos Valores</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <div 
+              <div
                 key={value.title}
                 className="bg-card p-6 rounded-lg border border-border text-center card-hover animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -107,9 +102,7 @@ const Sobre = () => {
                   <value.icon className="h-7 w-7 text-accent" />
                 </div>
                 <h3 className="font-display text-lg mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {value.description}
-                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -121,22 +114,17 @@ const Sobre = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 space-y-6">
-              <span className="text-accent font-medium tracking-widest text-sm uppercase">
-                Nossa Missão
-              </span>
-              <h2 className="font-display text-3xl md:text-4xl">
-                Transformar Ambientes, Criar Memórias
-              </h2>
+              <span className="text-accent font-medium tracking-widest text-sm uppercase">Nossa Missão</span>
+              <h2 className="font-display text-3xl md:text-4xl">Transformar Ambientes, Criar Memórias</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Nossa missão é proporcionar experiências sensoriais únicas através de 
-                  fragrâncias artesanais de alta qualidade, acessíveis a todos que buscam 
-                  transformar seus espaços em verdadeiros refúgios de bem-estar.
+                  Nossa missão é proporcionar experiências sensoriais únicas através de fragrâncias artesanais de alta
+                  qualidade, acessíveis a todos que buscam transformar seus espaços em verdadeiros refúgios de
+                  bem-estar.
                 </p>
                 <p>
-                  Queremos estar presentes nos momentos mais importantes da sua vida: 
-                  desde um banho relaxante após um dia de trabalho, até aquele jantar 
-                  especial com pessoas queridas.
+                  Queremos estar presentes nos momentos mais importantes da sua vida: desde um banho relaxante após um
+                  dia de trabalho, até aquele jantar especial com pessoas queridas.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-4 pt-4">
