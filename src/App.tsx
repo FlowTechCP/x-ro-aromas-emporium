@@ -7,9 +7,12 @@ import { CartProvider } from "@/contexts/CartContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CartSlideOver } from "@/components/cart/CartSlideOver";
+import { WhatsAppButton } from "@/components/whatsapp/WhatsAppButton";
 import Index from "./pages/Index";
 import Loja from "./pages/Loja";
 import Produto from "./pages/Produto";
+import Sobre from "./pages/Sobre";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,12 +31,15 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/loja" element={<Loja />} />
                 <Route path="/produto/:id" element={<Produto />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/admin" element={<Admin />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
             <Footer />
             <CartSlideOver />
+            <WhatsAppButton />
           </div>
         </BrowserRouter>
       </CartProvider>
